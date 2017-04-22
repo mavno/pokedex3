@@ -47,14 +47,14 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="M8q-YU-jjn">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="M8q-YU-jjn" customClass="PokeCell" customModule="pokedex3" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="105" height="105"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="105" height="105"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="4" translatesAutoresizingMaskIntoConstraints="NO" id="k4X-JT-Z7g">
+                                                <imageView userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="4" translatesAutoresizingMaskIntoConstraints="NO" id="k4X-JT-Z7g">
                                                     <rect key="frame" x="0.0" y="0.0" width="105" height="80"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="80" id="8YK-iz-HF7"/>
@@ -79,6 +79,10 @@
                                             <constraint firstItem="k4X-JT-Z7g" firstAttribute="top" secondItem="M8q-YU-jjn" secondAttribute="top" id="fzT-nD-tkO"/>
                                             <constraint firstItem="D0R-DI-nEB" firstAttribute="top" secondItem="k4X-JT-Z7g" secondAttribute="bottom" id="gfJ-O7-ZmV"/>
                                         </constraints>
+                                        <connections>
+                                            <outlet property="nameLbl" destination="D0R-DI-nEB" id="ucO-YD-FIp"/>
+                                            <outlet property="thumbImg" destination="k4X-JT-Z7g" id="MeS-Fn-Hrx"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
